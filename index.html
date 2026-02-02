@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luna Bistro Praha | Fine Dining</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <header class="site-header" id="top">
+    <nav class="navbar" aria-label="Hlavní navigace">
+      <a class="logo" href="#top">Luna Bistro Praha</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only">Otevřít menu</span>
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-menu">
+        <a href="#hero">Domů</a>
+        <a href="#signature">Signature</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Galerie</a>
+        <a href="#about">O nás</a>
+        <a href="#reviews">Reference</a>
+        <a href="#reservation">Rezervace</a>
+        <a href="#contact">Kontakt</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="hero">
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <p class="eyebrow">Fine dining · Praha</p>
+          <h1>Luna Bistro Praha</h1>
+          <p class="lead">Luxusní zážitek inspirovaný moderní českou kuchyní a měsíčním světlem Malé Strany.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#reservation">Rezervovat stůl</a>
+            <a class="btn ghost" href="#menu">Zobrazit menu</a>
+          </div>
+          <div class="hero-highlights">
+            <div>
+              <h3>7 chodů</h3>
+              <p>Degustační menu každý týden.</p>
+            </div>
+            <div>
+              <h3>Sommelier</h3>
+              <p>Výběr vín z Moravy i světa.</p>
+            </div>
+            <div>
+              <h3>Intimní salón</h3>
+              <p>Soukromé večeře do 12 osob.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Ukázkové fotky – při předání klientovi nahradit vlastními/licencovanými. -->
+        <div class="hero-media">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=80" alt="Interiér restaurace Luna Bistro Praha" loading="lazy" />
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true"></div>
+    </section>
+
+    <section class="section signature" id="signature">
+      <div class="container">
+        <div class="section-header">
+          <h2>Signature dishes</h2>
+          <p>Výběr ikonických chodů, které definují naši kuchyni.</p>
+        </div>
+        <div class="grid signature-grid">
+          <article class="card reveal">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1200&q=80" alt="Perlička s lanýži" loading="lazy" />
+            </div>
+            <h3>Perlička s lanýži</h3>
+            <p>Konfitovaná perlička, bramborové fondant, černý lanýž.</p>
+            <span>620 Kč</span>
+          </article>
+          <article class="card reveal">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=1200&q=80" alt="Ravioli z červené řepy" loading="lazy" />
+            </div>
+            <h3>Ravioli z červené řepy</h3>
+            <p>Ricotta, kozí sýr, lískové ořechy, máslová emulze.</p>
+            <span>480 Kč</span>
+          </article>
+          <article class="card reveal">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=1200&q=80" alt="Pražský candát" loading="lazy" />
+            </div>
+            <h3>Pražský candát</h3>
+            <p>Pečený candát, šafránové risotto, bylinkový olej.</p>
+            <span>560 Kč</span>
+          </article>
+          <article class="card reveal">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=1200&q=80" alt="Hovězí Wellington" loading="lazy" />
+            </div>
+            <h3>Hovězí Wellington</h3>
+            <p>Filet mignon, houbová duxelles, demi-glace.</p>
+            <span>790 Kč</span>
+          </article>
+          <article class="card reveal">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=1200&q=80" alt="Jarní chřest" loading="lazy" />
+            </div>
+            <h3>Jarní chřest</h3>
+            <p>Chřest, holandská omáčka, citrusová strouhanka.</p>
+            <span>420 Kč</span>
+          </article>
+          <article class="card reveal">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=1200&q=80" alt="Lunární dezert" loading="lazy" />
+            </div>
+            <h3>Lunární dezert</h3>
+            <p>Čokoládová pěna, karamel, křupavá pralinka.</p>
+            <span>340 Kč</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section menu" id="menu">
+      <div class="container">
+        <div class="section-header">
+          <h2>Menu</h2>
+          <p>Sezónní nabídka rozdělená do čtyř částí.</p>
+        </div>
+        <div class="tabs" role="tablist" aria-label="Menu sekce">
+          <button class="tab active" role="tab" aria-selected="true" aria-controls="tab-starters" id="tab-btn-starters">Předkrmy</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="tab-mains" id="tab-btn-mains">Hlavní</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="tab-desserts" id="tab-btn-desserts">Dezerty</button>
+          <button class="tab" role="tab" aria-selected="false" aria-controls="tab-drinks" id="tab-btn-drinks">Nápoje</button>
+        </div>
+        <div class="tab-panels">
+          <div class="tab-panel active" role="tabpanel" id="tab-starters" aria-labelledby="tab-btn-starters" tabindex="0">
+            <ul>
+              <li><span>Amuse bouche s lanýžem</span><span>220 Kč</span></li>
+              <li><span>Tartar z jeleního masa</span><span>340 Kč</span></li>
+              <li><span>Krém z topinamburu</span><span>260 Kč</span></li>
+              <li><span>Salát s kozím sýrem</span><span>280 Kč</span></li>
+            </ul>
+          </div>
+          <div class="tab-panel" role="tabpanel" id="tab-mains" aria-labelledby="tab-btn-mains" tabindex="0">
+            <ul>
+              <li><span>Telecí hřbet s morelami</span><span>720 Kč</span></li>
+              <li><span>Mořský vlk, beurre blanc</span><span>690 Kč</span></li>
+              <li><span>Kachní prso s povidly</span><span>640 Kč</span></li>
+              <li><span>Risotto s bílým lanýžem</span><span>560 Kč</span></li>
+            </ul>
+          </div>
+          <div class="tab-panel" role="tabpanel" id="tab-desserts" aria-labelledby="tab-btn-desserts" tabindex="0">
+            <ul>
+              <li><span>Pavlova s citrusy</span><span>290 Kč</span></li>
+              <li><span>Crème brûlée tonka</span><span>310 Kč</span></li>
+              <li><span>Cheesecake s levandulí</span><span>280 Kč</span></li>
+              <li><span>Čokoládový fondant</span><span>320 Kč</span></li>
+            </ul>
+          </div>
+          <div class="tab-panel" role="tabpanel" id="tab-drinks" aria-labelledby="tab-btn-drinks" tabindex="0">
+            <ul>
+              <li><span>Champagne Blanc de Blancs</span><span>390 Kč</span></li>
+              <li><span>Moravský Riesling</span><span>210 Kč</span></li>
+              <li><span>Signature koktejl Luna</span><span>260 Kč</span></li>
+              <li><span>Výběrová káva</span><span>140 Kč</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <h2>Galerie</h2>
+          <p>Atmosféra a detaily našeho bistro.</p>
+        </div>
+        <div class="grid gallery-grid" role="list">
+          <button class="gallery-item reveal" data-index="0" data-src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=1600&q=80" data-alt="Galerie – signature dish" role="listitem" aria-label="Galerie – signature dish">
+            <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=1600&q=80" alt="Galerie – signature dish" loading="lazy" />
+          </button>
+          <button class="gallery-item reveal" data-index="1" data-src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1600&q=80" data-alt="Galerie – detail servírování" role="listitem" aria-label="Galerie – detail servírování">
+            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1600&q=80" alt="Galerie – detail servírování" loading="lazy" />
+          </button>
+          <button class="gallery-item reveal" data-index="2" data-src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=80" data-alt="Galerie – interiér" role="listitem" aria-label="Galerie – interiér">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=80" alt="Galerie – interiér" loading="lazy" />
+          </button>
+          <button class="gallery-item reveal" data-index="3" data-src="https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=1600&q=80" data-alt="Galerie – sezónní chod" role="listitem" aria-label="Galerie – sezónní chod">
+            <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=1600&q=80" alt="Galerie – sezónní chod" loading="lazy" />
+          </button>
+          <button class="gallery-item reveal" data-index="4" data-src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=1600&q=80" data-alt="Galerie – hlavní chod" role="listitem" aria-label="Galerie – hlavní chod">
+            <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=1600&q=80" alt="Galerie – hlavní chod" loading="lazy" />
+          </button>
+          <button class="gallery-item reveal" data-index="5" data-src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=1600&q=80" data-alt="Galerie – dezert" role="listitem" aria-label="Galerie – dezert">
+            <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=1600&q=80" alt="Galerie – dezert" loading="lazy" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h2>O nás</h2>
+          <p>Luna Bistro je synonymem pro jemný luxus a autentické zážitky.</p>
+        </div>
+        <div class="about-content">
+          <div class="about-story reveal">
+            <p>Naše kuchyně oslavuje české suroviny v moderním pojetí. Každý večer propojujeme tradici s inovací, abychom hostům nabídli nezapomenutelný gastronomický zážitek v srdci Prahy.</p>
+          </div>
+          <div class="values">
+            <div class="value-card reveal">
+              <h3>Sezónnost</h3>
+              <p>Pečlivě vybíráme lokální suroviny v jejich nejlepší kondici.</p>
+            </div>
+            <div class="value-card reveal">
+              <h3>Preciznost</h3>
+              <p>Každý detail servírování je dotažený k dokonalosti.</p>
+            </div>
+            <div class="value-card reveal">
+              <h3>Atmosféra</h3>
+              <p>Intimní prostředí s noblesní elegancí a teplým světlem.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="section-header">
+          <h2>Reference</h2>
+          <p>Hlasy hostů, kteří se k nám rádi vracejí.</p>
+        </div>
+        <div class="review-slider" aria-roledescription="carousel">
+          <div class="review-track">
+            <article class="review-card active">
+              <p>„Nádherný prostor, perfektní servis a degustační menu, na které se nezapomíná.“</p>
+              <span>— Klára N.</span>
+            </article>
+            <article class="review-card">
+              <p>„Nejlepší kombinace vína a jídla v Praze. Každý chod byl malým překvapením.“</p>
+              <span>— Martin V.</span>
+            </article>
+            <article class="review-card">
+              <p>„Luna Bistro je výjimečný zážitek. Luxus bez okázalosti.“</p>
+              <span>— Petra S.</span>
+            </article>
+          </div>
+          <div class="dots" role="tablist" aria-label="Reference">
+            <button class="dot active" aria-label="Reference 1" aria-selected="true" role="tab"></button>
+            <button class="dot" aria-label="Reference 2" aria-selected="false" role="tab"></button>
+            <button class="dot" aria-label="Reference 3" aria-selected="false" role="tab"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reservation" id="reservation">
+      <div class="container">
+        <div class="section-header">
+          <h2>Rezervace</h2>
+          <p>Zarezervujte si svůj stůl během několika kroků.</p>
+        </div>
+        <div class="reservation-grid">
+          <form class="reservation-form" id="reservation-form" novalidate>
+            <div class="form-row">
+              <label for="date">Datum</label>
+              <input type="date" id="date" name="date" required aria-describedby="error-date" />
+              <small class="error" id="error-date"></small>
+            </div>
+            <div class="form-row">
+              <label for="time">Čas</label>
+              <input type="time" id="time" name="time" required aria-describedby="error-time" />
+              <small class="error" id="error-time"></small>
+            </div>
+            <div class="form-row">
+              <label for="guests">Počet osob</label>
+              <select id="guests" name="guests" required aria-describedby="error-guests">
+                <option value="">Vyberte</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6+</option>
+              </select>
+              <small class="error" id="error-guests"></small>
+            </div>
+            <div class="form-row">
+              <label for="name">Jméno</label>
+              <input type="text" id="name" name="name" required placeholder="Vaše jméno" aria-describedby="error-name" />
+              <small class="error" id="error-name"></small>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="email@example.com" aria-describedby="error-email" />
+              <small class="error" id="error-email"></small>
+            </div>
+            <div class="form-row full">
+              <label for="note">Poznámka</label>
+              <textarea id="note" name="note" rows="4" placeholder="Speciální přání"></textarea>
+            </div>
+            <button type="submit" class="btn primary full">Odeslat rezervaci</button>
+          </form>
+          <div class="reservation-success" id="reservation-success" aria-live="polite" hidden>
+            <h3>Děkujeme!</h3>
+            <p>Vaše rezervace byla odeslána. Potvrzení brzy dorazí e-mailem.</p>
+            <button class="btn ghost" id="new-reservation">Vytvořit další rezervaci</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Kontakt</h2>
+          <p>Najdete nás v historickém centru Prahy.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <h3>Luna Bistro Praha</h3>
+            <p id="address">Malostranské náměstí 12, 118 00 Praha 1</p>
+            <button class="btn ghost" id="copy-address">Zkopírovat adresu</button>
+            <div class="hours">
+              <div><span>Po–Čt</span><span>17:00 – 23:00</span></div>
+              <div><span>Pá–So</span><span>17:00 – 00:00</span></div>
+              <div><span>Neděle</span><span>17:00 – 22:00</span></div>
+            </div>
+          </div>
+          <div class="map-placeholder reveal" role="img" aria-label="Stylizovaná mapa"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2024 Luna Bistro Praha. Všechna práva vyhrazena.</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-modal="true" role="dialog" aria-hidden="true">
+    <div class="lightbox-content" role="document">
+      <button class="lightbox-close" aria-label="Zavřít">×</button>
+      <button class="lightbox-nav prev" aria-label="Předchozí">‹</button>
+      <img class="lightbox-image" tabindex="0" alt="" />
+      <button class="lightbox-nav next" aria-label="Další">›</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
